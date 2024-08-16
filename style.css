@@ -1,0 +1,154 @@
+/* Color Palette */
+:root {
+    --dark-blue: #201E43;
+    --blue: #134B70;
+    --light-blue: #508C9B;
+    --light-gray: #EEEEEE;
+    --dark-gray: #A9A9A9;
+    --pastel-blue: #B3E5FC;
+}
+
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--light-gray);
+    color: var(--dark-blue);
+    overflow-x: hidden;
+}
+
+header, section, footer {
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--dark-blue);
+    color: var(--light-gray);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Menambah padding untuk membuat navbar lebih tinggi */
+    text-align: center;
+    z-index: 1000;
+    min-height: 60px; /* Menambahkan tinggi minimum */
+}
+
+nav a {
+    color: var(--dark-blue);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.fullpage {
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#beranda {
+    background-image: url('assets/fotowebospek.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: var(--blue);
+}
+
+.section-content {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+footer {
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
+    padding: 40px 20px; /* Menambahkan padding untuk memberi ruang di atas dan bawah */
+}
+/* Additional Styles */
+.image-container {
+    text-align: center;
+    margin: px 0;
+    width: 30%;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contact-content {
+    margin-top: 20px; /* Memberi jarak antara judul "Kontak" dan isi kontak */
+    margin-bottom: 40px; /* Memberi jarak antara isi kontak dan hak cipta */
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-list li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-list a {
+    color: var(--light-gray);
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+.contact-icon {
+    width: 24px; /* Sesuaikan ukuran logo */
+    height: 24px; 
+    margin-right: 10px;
+}
