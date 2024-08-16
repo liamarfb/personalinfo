@@ -105,10 +105,11 @@ footer {
     color: var(--light-gray);
     padding: 40px 20px; /* Menambahkan padding untuk memberi ruang di atas dan bawah */
 }
+
 /* Additional Styles */
 .image-container {
     text-align: center;
-    margin: px 0;
+    margin: 20px 0; /* Mengoreksi margin yang kosong sebelumnya */
     width: 30%;
 }
 
@@ -143,7 +144,7 @@ footer {
     align-items: center;
 }
 
-.contact-list a:hover {
+contact-list a:hover {
     text-decoration: underline;
 }
 
@@ -151,4 +152,74 @@ footer {
     width: 24px; /* Sesuaikan ukuran logo */
     height: 24px; 
     margin-right: 10px;
+}
+
+/* Responsive Design for Tablets and Smartphones */
+@media (max-width: 768px) {
+    header, section, footer {
+        height: auto; /* Mengubah tinggi agar sesuai dengan konten */
+        padding: 10px; /* Mengurangi padding agar lebih pas di layar kecil */
+    }
+
+    header h1 {
+        font-size: 2rem; /* Mengurangi ukuran font agar lebih proporsional */
+    }
+
+    nav {
+        flex-direction: column; /* Mengubah navigasi menjadi vertikal */
+        padding: 10px; /* Mengurangi padding pada navigasi */
+    }
+
+    nav a {
+        margin: 5px 0; /* Menambah jarak antara link di navigasi */
+        font-size: 1rem; /* Mengurangi ukuran font di navigasi */
+    }
+
+    .fullpage {
+        padding: 10px; /* Mengurangi padding di dalam section */
+    }
+
+    .section-title {
+        font-size: 1.5rem; /* Mengurangi ukuran font judul section */
+    }
+
+    .section-content {
+        font-size: 1rem; /* Mengurangi ukuran font konten section */
+    }
+
+    .image-container {
+        width: 80%; /* Memperbesar lebar gambar agar sesuai dengan layar kecil */
+    }
+
+    .contact-list li {
+        flex-direction: column; /* Menyusun ikon dan teks kontak secara vertikal */
+        align-items: flex-start;
+    }
+
+    .contact-list a {
+        font-size: 1rem; /* Mengurangi ukuran font pada link kontak */
+    }
+}
+
+/* Responsive Design for Small Smartphones */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem; /* Lebih kecil lagi untuk layar yang sangat kecil */
+    }
+
+    nav a {
+        font-size: 0.875rem; /* Lebih kecil lagi untuk layar yang sangat kecil */
+    }
+
+    .section-title {
+        font-size: 1.25rem; /* Ukuran judul lebih kecil */
+    }
+
+    .section-content {
+        font-size: 0.875rem; /* Ukuran teks lebih kecil */
+    }
+
+    .image-container {
+        width: 100%; /* Gambar memenuhi lebar layar kecil */
+    }
 }
